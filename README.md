@@ -1,5 +1,5 @@
-[![units-test](https://github.com/HatsuneMiku3939/direnv-action/actions/workflows/test.yml/badge.svg)](https://github.com/HatsuneMiku3939/direnv-action/actions/workflows/test.yml)
-[![CodeQL](https://github.com/HatsuneMiku3939/direnv-action/actions/workflows/codeql.yml/badge.svg)](https://github.com/HatsuneMiku3939/direnv-action/actions/workflows/codeql.yml)
+[![units-test](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/test.yml/badge.svg)](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/test.yml)
+[![CodeQL](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/codeql.yml/badge.svg)](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/codeql.yml)
 
 # direnv action
 
@@ -18,7 +18,7 @@ No outputs
 ## Example usage
 
 ```yaml
-uses: HatsuneMiku3939/direnv-action@v1
+uses: bukzor-sentryio/direnv-install@v1
 with:
   direnvVersion: 2.32.1
 ```

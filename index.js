@@ -15,8 +15,8 @@ async function installTools() {
     core.addPath(foundToolCache);
   } else {
     const workspace = process.env["GITHUB_WORKSPACE"];
-    const key = `hatsunemiku3939-direnv-action-toolcache-${direnvVersion}`;
-    const paths = [`${workspace}/.direnv-action`];
+    const key = `bukzor-sentryio-direnv-install-toolcache-${direnvVersion}`;
+    const paths = [`${workspace}/.direnv-install`];
     const restoreKeys = [key];
 
     // restore from cache
@@ -28,7 +28,7 @@ async function installTools() {
       // save tool-cache
       core.info(`saving to tool-cache...`);
       const cachedPath = await tc.cacheFile(
-        `${workspace}/.direnv-action/direnv`,
+        `${workspace}/.direnv-install/direnv`,
         "direnv",
         "direnv",
         direnvVersion
@@ -38,7 +38,7 @@ async function installTools() {
       core.addPath(cachedPath);
 
       // clear
-      await exec.exec("rm", [`-rf`, `${workspace}/.direnv-action`]);
+      await exec.exec("rm", [`-rf`, `${workspace}/.direnv-install`]);
     } else {
       core.info("direnv not found in cache, installing...");
       const installPath = await tc.downloadTool(
@@ -51,10 +51,10 @@ async function installTools() {
 
       // rename to direnv
       core.info(`renaming executable to direnv...`);
-      await exec.exec("mkdir", [`${workspace}/.direnv-action`]);
+      await exec.exec("mkdir", [`${workspace}/.direnv-install`]);
       await exec.exec("cp", [
         installPath,
-        `${workspace}/.direnv-action/direnv`,
+        `${workspace}/.direnv-install/direnv`,
       ]);
 
       // save to cache
@@ -74,7 +74,7 @@ async function installTools() {
       core.addPath(cachedPath);
 
       // clear
-      await exec.exec("rm", [`-rf`, `${workspace}/.direnv-action`]);
+      await exec.exec("rm", [`-rf`, `${workspace}/.direnv-install`]);
     }
   }
 }
