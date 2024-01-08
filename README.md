@@ -1,15 +1,15 @@
 [![units-test](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/test.yml/badge.svg)](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/test.yml)
 [![CodeQL](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/codeql.yml/badge.svg)](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/codeql.yml)
 
-# direnv action
+# direnv install
 
-> Privides environment variables via direnv
+> Privides a direnv binary
 
-This action provides environment variables via [direnv](https://direnv.net/),
+This action provides a binary of [direnv](https://direnv.net/),
 
 ## Inputs
 
-- `direnvVersion`: The version of direnv to use. Default: `2.32.1`
+- `direnvVersion`: The version of direnv to install. Default: `2.32.1`
 
 ## Outputs
 
@@ -23,4 +23,4 @@ with:
   direnvVersion: 2.32.1
 ```
 
-This will load `.envrc` residing at the top of the repository.
+This will _not_ load any `.envrc` file.
