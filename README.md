@@ -1,7 +1,5 @@
-
 [![units-test](https://github.com/HatsuneMiku3939/direnv-action/actions/workflows/test.yml/badge.svg)](https://github.com/HatsuneMiku3939/direnv-action/actions/workflows/test.yml)
 [![CodeQL](https://github.com/HatsuneMiku3939/direnv-action/actions/workflows/codeql.yml/badge.svg)](https://github.com/HatsuneMiku3939/direnv-action/actions/workflows/codeql.yml)
-
 
 # direnv action
 

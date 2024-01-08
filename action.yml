@@ -1,13 +1,13 @@
-name: 'direnv install'
-description: 'Privides binary for direnv'
+name: "direnv install"
+description: "Privides binary for direnv"
 branding:
   icon: play
   color: green
 inputs:
   direnvVersion:
-    description: 'direnv version to use'
+    description: "direnv version to use"
     required: true
-    default: '2.32.1'
+    default: "2.32.1"
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"

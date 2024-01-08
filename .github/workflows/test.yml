@@ -5,46 +5,46 @@ on:
     branches:
       - master
       - main
-      - 'releases/*'
+      - "releases/*"
 
 jobs:
   # unit tests
   units:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - run: npm ci
-    - run: npm test
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm test
 
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - run: npm ci
-    - run: npm run prepare
-    - uses: ./
-      with:
-        direnvVersion: 2.32.3
-    - run: printenv | grep DIRENV_ACTION_TEST
-    - run: echo $PATH | grep $(pwd)/bin
-    - run: printenv
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm run prepare
+      - uses: ./
+        with:
+          direnvVersion: 2.32.3
+      - run: printenv | grep DIRENV_ACTION_TEST
+      - run: echo $PATH | grep $(pwd)/bin
+      - run: printenv
 
   test-default-option:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - run: npm ci
-    - run: npm run prepare
-    - uses: ./
-    - run: printenv | grep DIRENV_ACTION_TEST
-    - run: echo $PATH | grep $(pwd)/bin
-    - run: printenv
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm run prepare
+      - uses: ./
+      - run: printenv | grep DIRENV_ACTION_TEST
+      - run: echo $PATH | grep $(pwd)/bin
+      - run: printenv
