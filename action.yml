@@ -1,5 +1,5 @@
-name: 'direnv action'
-description: 'Privides environment variables via direnv'
+name: 'direnv install'
+description: 'Privides binary for direnv'
 branding:
   icon: play
   color: green
