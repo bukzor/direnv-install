@@ -88,24 +88,6 @@ async function main() {
   try {
     // install direnv
     await installTools();
-
-    // allow given envrc
-    await allowEnvrc();
-
-    // export envrc to json
-    const envs = await exportEnvrc();
-
-    // set envs
-    Object.keys(envs).forEach(function (name) {
-      const value = envs[name];
-
-      if (name === 'PATH') {
-        core.info(`detected PATH in .envrc, appending to PATH...`);
-        core.addPath(value);
-      } else {
-        core.exportVariable(name, value);
-      }
-    });
   }
   catch (error) {
     core.setFailed(error.message);
