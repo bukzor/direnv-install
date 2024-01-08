@@ -79,24 +79,6 @@ async function installTools() {
   }
 }
 
-async function allowEnvrc() {
-  core.info("allowing envrc...");
-  await exec.exec(`direnv`, ["allow"]);
-}
-
-async function exportEnvrc() {
-  let outputBuffer = "";
-  const options = {};
-  options.listeners = {
-    stdout: (data) => {
-      outputBuffer += data.toString();
-    },
-  };
-  core.info("exporting envrc...");
-  await exec.exec(`direnv`, ["export", "json"], options);
-  return JSON.parse(outputBuffer);
-}
-
 // action entrypoint
 async function main() {
   try {
