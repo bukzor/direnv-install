@@ -50,7 +50,7 @@ async function installTools() {
     core.addPath(foundToolCache);
   } else {
     const workspace = process.env["GITHUB_WORKSPACE"];
-    const key = `bukzor-sentryio-direnv-install-toolcache-${direnvVersion}-${platform}-${arch}`;
+    const key = `bukzor-direnv-install-toolcache-${direnvVersion}-${platform}-${arch}`;
     const paths = [`${workspace}/.direnv-install`];
     const restoreKeys = [key];
 

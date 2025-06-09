@@ -1,5 +1,5 @@
-[![test](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/test.yaml/badge.svg)](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/test.yaml)
-[![CodeQL](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/codeql.yml/badge.svg)](https://github.com/bukzor-sentryio/direnv-install/actions/workflows/codeql.yml)
+[![test](https://github.com/bukzor/direnv-install/actions/workflows/test.yaml/badge.svg)](https://github.com/bukzor/direnv-install/actions/workflows/test.yaml)
+[![CodeQL](https://github.com/bukzor/direnv-install/actions/workflows/codeql.yml/badge.svg)](https://github.com/bukzor/direnv-install/actions/workflows/codeql.yml)
 
 # direnv install
 
@@ -18,7 +18,7 @@ No outputs
 ## Example usage
 
 ```yaml
-uses: bukzor-sentryio/direnv-install@v1
+uses: bukzor/direnv-install@v1
 with:
   direnvVersion: 2.32.1
 ```
@@ -43,7 +43,7 @@ version below v1.0.7, only `linux-x86_64` is supported.
 <table>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/bukzor-sentryio>
+        <a href=https://github.com/bukzor>
             <img src=https://avatars.githubusercontent.com/u/580053?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Kim SeungSu/>
             <br />
             <sub style="font-size:14px"><b>Kim SeungSu</b></sub>
