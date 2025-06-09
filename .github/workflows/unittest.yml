@@ -30,11 +30,10 @@ jobs:
       - run: npm run prepare
       - uses: ./
         with:
-          masks: SECRET1, SECRET2
           direnvVersion: 2.32.3
-      - run: printenv | grep DIRENV_ACTION_TEST
-      - run: echo $PATH | grep $(pwd)/bin
-      - run: printenv
+      - run: |
+          which direnv
+          direnv --version | grep -F 2.32.3
 
   test-default-option:
     runs-on: ubuntu-latest
@@ -46,6 +45,6 @@ jobs:
       - run: npm ci
       - run: npm run prepare
       - uses: ./
-      - run: printenv | grep DIRENV_ACTION_TEST
-      - run: echo $PATH | grep $(pwd)/bin
-      - run: printenv
+      - run: |
+          which direnv
+          direnv --version | grep -F 2.32.1
