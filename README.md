@@ -43,10 +43,17 @@ version below v1.0.7, only `linux-x86_64` is supported.
 <table>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/bukzor>
+        <a href=https://github.com/HatsuneMiku3939>
             <img src=https://avatars.githubusercontent.com/u/580053?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Kim SeungSu/>
             <br />
             <sub style="font-size:14px"><b>Kim SeungSu</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/bukzor>
+            <img src=https://avatars.githubusercontent.com/u/640328?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Buck Evan/>
+            <br />
+            <sub style="font-size:14px"><b>Buck Evan</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -54,6 +61,20 @@ version below v1.0.7, only `linux-x86_64` is supported.
             <img src=https://avatars.githubusercontent.com/u/24846639?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=hopisaurus/>
             <br />
             <sub style="font-size:14px"><b>hopisaurus</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/mdial89f>
+            <img src=https://avatars.githubusercontent.com/u/48921055?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Mike Dial/>
+            <br />
+            <sub style="font-size:14px"><b>Mike Dial</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/gidoichi>
+            <img src=https://avatars.githubusercontent.com/u/32694823?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=gidoichi/>
+            <br />
+            <sub style="font-size:14px"><b>gidoichi</b></sub>
         </a>
     </td>
 </tr>
